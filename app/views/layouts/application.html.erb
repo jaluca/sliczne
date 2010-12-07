@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ladniusie</title>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag :all %>
+  
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+  <div id='header'>
+		
+	</div><!-- header-->
+	<div id='container'>
+		<%= yield %>
+	</div><!--container-->
+
+</body>
+</html>

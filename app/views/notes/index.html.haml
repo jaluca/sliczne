@@ -1,0 +1,15 @@
+%h1 Twoje ładniusie notki:
+- @notes.each do |note|
+  %h2= note.title
+  %p= note.content
+  %signature= note.author
+  %p= link_to "Usuń Notke", note_path(note), :method => :delete, :confirm => "Czy aby na pewno?"
+  %p= "Komentarze:"
+  - note.comments.each do |comment|
+    %p= "#{comment.author}"
+    %p= "#{comment.content}"
+  %p= link_to "Dodaj komentarz", new_note_comment_path(note)
+  
+  
+%p= link_to "Nowa notka", new_note_path
+%p= will_paginate @notes

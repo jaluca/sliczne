@@ -1,0 +1,67 @@
+body {
+  background: url(http://www.infoservemedia.com/design/resources/backgrounds/photos/59zbv4u20k.jpg) fixed;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#container{
+	width:790px;
+	background: #ffff99;
+	border: 1px solid black;
+	margin-top:25px;
+	margin-left: auto; /*185px;*/
+	margin-right: auto;
+	padding: 5px 10px;
+}
+
+h1{
+	font-family: Verdana;
+	font-size: 26px;
+	color: #400000;
+	/*margin: 5px 0px;*/
+	text-align: center;
+}
+
+h2{
+	font-family: Apple Chancery;
+	font-size: 15px;
+	color: #000000;
+	margin:3px 10px;
+}
+
+#container signature{
+  font-family: Apple Chancery;
+	font-size: 15px;
+	color: #000000;
+	margin: 3px 10px;
+}
+
+#container p {
+	font-family: Verdana;
+	font-size: 12px;
+	color: #000000;
+	margin: 3px 20px;
+}
+
+#container ul {
+	list-style-type: none;
+}
+
+a:link {
+	font-family: Verdana;
+	font-size: 14px;
+	color: #64523b;
+}
+
+a:visited {
+	font-family: Verdana;
+	font-size: 14px;
+	color: #a09c8b;
+}
+
+a:hover{
+	font-family: Verdana;
+	font-size: 14px;
+	color: #fcb1af;
+}

@@ -1,0 +1,13 @@
+- if @note.errors.any?
+  #errorExplanation
+    %h2
+      = pluralize(@note.errors.count, "error")
+    %ul  
+    - @note.errors.full_messages.each do |msg|
+      %li= msg
+%p= f.label :title, "Tytuł"
+%p= f.text_field :title
+%p= f.label :content, "Treść"
+%p= f.text_area :content
+%p= f.label :author, "Podpisz się"
+%p= f.text_field :author

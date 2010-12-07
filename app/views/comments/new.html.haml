@@ -1,0 +1,7 @@
+- form_for [@comment.note, @comment] do |f|
+  %p= f.label :content, "Komentarz"
+  %p= f.text_area :content
+  %p= f.label :author, "Autor"
+  %p= f.text_field :author
+  %p= f.submit "dodaj komentarz"
+  %p= link_to "powrot",notes_path
