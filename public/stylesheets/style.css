@@ -65,3 +65,7 @@ a:hover{
 	font-size: 14px;
 	color: #fcb1af;
 }
+
+.new_comment{
+  display: none;
+}

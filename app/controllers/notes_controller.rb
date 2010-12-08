@@ -26,6 +26,15 @@ class NotesController < ApplicationController
      redirect_to notes_path
   end
   
+  #def destroy
+  #    @note.destroy
+  
+  #    respond_to do |format|
+  #      format.html { redirect_to(notes_url) }
+  #      format.xml  { head :ok }
+  #    end
+  #end
+  
   private
     def load_note
   	  @note = Note.find(params[:id])

@@ -2,12 +2,11 @@ Sliczne::Application.routes.draw do
   resources :notes do
     resources :comments
   end
-   
   #resources :notes do
   #  get :autocomplete_brand_name, :on => :collection
   #end
 
-   root :to => "notes#index"
+  root :to => "notes#index"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

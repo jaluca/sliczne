@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  #respond_to :html, :xml, :json
   
   def new
     @comment = Note.find(params[:note_id]).comments.new
